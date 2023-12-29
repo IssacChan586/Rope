@@ -893,7 +893,8 @@ class GUI(tk.Tk):
         # turn back on the ones that are assigned to the curent target face
         for i in range(len(self.target_faces[button]["SourceFaceAssignments"])):
             self.source_faces[self.target_faces[button]["SourceFaceAssignments"][i]]["ButtonState"] = True
-            self.source_faces[self.target_faces[button]["SourceFaceAssignments"][i]]["TKButton"].config(self.button_highlight_style) 
+            self.source_faces[self.target_faces[button]["SourceFaceAssignments"][i]]["TKButton"].config(self.button_highlight_style)
+        self.toggle_swapper()
 
     def toggle_source_faces_buttons_state(self, event, button):  
         # jot down the current state of the button

@@ -1,5 +1,5 @@
 PARAM_BUTTONS_PARAMS =    {
-    'UpscaleState':             False,
+    'UpscaleState':             True,
     'UpscaleMode':              0,
     'UpscaleModes':             ['GFPGAN', 'CF', 'GPEN256', 'GPEN512'],
     'UpscaleAmount':            [100, 100, 100, 100],
@@ -65,10 +65,10 @@ PARAM_BUTTONS_PARAMS =    {
     'OccluderIcon':             './rope/media/occluder.png',
     'OccluderMessage':          'OCCLUDER - Automatic occluder. Any object in the face region is occluded. [LB: on/off, MW: additional size]', 
     
-    'FaceParserState':          False,
+    'FaceParserState':          True,
     'FaceParserMode':           0, 
     'FaceParserModes':          ['Mouth', 'Background'],  
-    'FaceParserAmount':         [0, 0],
+    'FaceParserAmount':         [50, 0],
     'FaceParserMin':            -50,
     'FaceParserMax':            50,
     'FaceParserInc':            1,                                                 
